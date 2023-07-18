@@ -68,9 +68,9 @@ def main():
 
     # Imprimir o coeficiente de determinação (r²) para cada modelo
     print('Coeficiente de Determinação (r²):')
-    print('Modelo 1: N = β0 + β1t - r² =', r_squared1)
-    print('Modelo 2: N = β0 + β1t + β2t^2 - r² =', r_squared2)
-    print('Modelo 3: N = β0 * exp(β1t) - r² =', r_squared3)
+    print('Modelo 1: N = B0 + B1t - r² =', r_squared1)
+    print('Modelo 2: N = B0 + B1t + B2t^2 - r² =', r_squared2)
+    print('Modelo 3: N = B0 * exp(B1t) - r² =', r_squared3)
 
     # Imprimir o modelo com o melhor coeficiente de determinação
     if best_model_index == 0:

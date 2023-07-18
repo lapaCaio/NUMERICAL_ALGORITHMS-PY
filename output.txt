@@ -1,0 +1,5 @@
+Coeficiente de Determinação (r^2):
+Modelo 1: N = B0 + B1t - r^2 = 0.9958324794797561
+Modelo 2: N = B0 + B1t + B2t^2 - r^2 = 0.9978012355147359
+Modelo 3: N = B0 * exp(B1t) - r^2 = 0.9977259472690421
+O Modelo 2 tem melhor qualidade.

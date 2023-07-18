@@ -21,9 +21,9 @@ def read_matrix_from_file(file_name):
 def save_results_to_file(file_path, r_squared_values, best_model_index):
     with open(file_path, 'w') as file:
         file.write('Coeficiente de Determinação (r^2):\n')
-        file.write('Modelo 1: N = β0 + β1t - r^2 = {}\n'.format(r_squared_values[0]))
-        file.write('Modelo 2: N = β0 + β1t + β2t^2 - r^2 = {}\n'.format(r_squared_values[1]))
-        file.write('Modelo 3: N = β0 * exp(β1t) - r^2 = {}\n'.format(r_squared_values[2]))
+        file.write('Modelo 1: N = B0 + B1t - r^2 = {}\n'.format(r_squared_values[0]))
+        file.write('Modelo 2: N = B0 + B1t + B2t^2 - r^2 = {}\n'.format(r_squared_values[1]))
+        file.write('Modelo 3: N = B0 * exp(B1t) - r^2 = {}\n'.format(r_squared_values[2]))
 
         if best_model_index == 0:
             file.write('O Modelo 1 tem melhor qualidade.\n')
