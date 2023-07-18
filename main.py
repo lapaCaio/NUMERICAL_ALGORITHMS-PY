@@ -57,9 +57,9 @@ def main():
 
     # Plotar os dados e as curvas ajustadas
     plt.scatter(age, quantity, color='blue', label='Data')
-    plt.plot(age, N_hat1, color='red', label='Modelo 1: N = ?0 + ?1t')
-    plt.plot(age, N_hat2, color='green', label='Modelo 2: N = ?0 + ?1t + ?2t^2')
-    plt.plot(age, N_hat3, color='purple', label='Modelo 3: N = ?0 * exp(?1t)')
+    plt.plot(age, N_hat1, color='red', label='Modelo 1: N = β0 + β1t')
+    plt.plot(age, N_hat2, color='green', label='Modelo 2: N = β0 + β1t + β2t^2')
+    plt.plot(age, N_hat3, color='purple', label='Modelo 3: N = β0 * exp(β1t)')
     plt.xlabel('Idade (anos)')
     plt.ylabel('Quantidade de Carbono-14')
     plt.title('Ajuste dos modelos aos dados')
@@ -68,6 +68,7 @@ def main():
 
     # Imprimir o coeficiente de determinação (r²) para cada modelo
     print('Coeficiente de Determinação (r²):')
+
     print('Modelo 1: N = B0 + B1t - r² =', r_squared1)
     print('Modelo 2: N = B0 + B1t + B2t^2 - r² =', r_squared2)
     print('Modelo 3: N = B0 * exp(B1t) - r² =', r_squared3)
