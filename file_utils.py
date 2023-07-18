@@ -1,4 +1,9 @@
+# DESENVOLVIDO POR:
+# PEDRO LUCAS NASCIMENTO MOREIRA MACHADO
+# KAIO STEFAN CAMPOS NUNES
+# CAIO PEREIRA LAPA
 def read_matrix_from_file(file_name):
+
     list1 = []
     list2 = []
 
